@@ -1,14 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="src/style.css">
+    <title>Abi's Weather</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/08164ceeda.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css" />
 </head>
-<body>
 
-<script>src="src/app.js"</script>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3">
+                <h2 class="time">
+                    Sunday
+                    <br />
+                    07/02/2020
+                    <br />
+                    13:00
+                </h2>
+                <h1 id="cityDisplay">
+                    Derry <br />/Londonderry
+                </h1>
+                <form id="search-form">
+                    <input type="text" placeholder="search city" id="search-text-input">
+                    <input type="submit" value="Search">
+                    <input type="submit" value="Your Location" id="current">
+                </form>
+            </div>
+            <div class="col-2">
+                <p>
+                    <span class="tempdisp temp1" id="displaytemp">6ºC</span>
+                    <br />
+                </p>
+                <form id="convert-form">
+                    <input type="image" src="Fbutton.png" alt="Submit" width="30" height="30" id="fConvert">
+                    <input type="image" src="Cbutton.png" alt="Submit" width="30" height="30" id="cConvert">
+                    <ul class="detail">
+                        <li>Humidity: <span id="humidity1">94%</span></li>
+                        <li>Wind: <span id="wind1">10mph</span></li>
+                    </ul>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-cloud-rain"></i>
+                <br />
+                </h2>
+                <p id="description1"><em>Light rain showers</em></p>
+            </div>
+            <div class="col-3"></div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-3">
+                <h3>
+                    <em> Forecast </em>
+                </h3>
+                <ul class="forecast">
+                    <li>Monday: </li>
+                    <li>Tuesday: </li>
+                    <li>Wednesday: </li>
+                    <li>Thursday: </li>
+                    <li>Friday: </li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul class="forecast2">
+                    <li>Rain 7ºC / 3ºC</li>
+                    <li>Rain 6ºC / 3ºC</li>
+                    <li>Rain 6ºC / 2ºC</li>
+                    <li>Rain 3ºC / -1ºC</li>
+                    <li>Sunny 2ºC / -2ºC</li>
+                </ul>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://github.com/Anniesland/SCweather"> Open Source code</a>
+        by Anniesland
+    </footer>
 </body>
+<script src="src/app.js"></script>
+
 </html>
