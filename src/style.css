@@ -1,22 +1,27 @@
 body {
-  font-family: "Yusei Magic", sans-serif;
+  font-family: "Lancelot", cursive;
   margin: 65px 300px;
   background-image: url(newGraphic.png);
-  background-size: 700px;
+  background-size: 680px;
   background-repeat: no-repeat;
   background-position: center;
 }
 h1 {
-  font-size: 25px;
-  padding-bottom: 20px;
+  font-size: 30px;
+  padding-bottom: 10px;
   text-align: right;
 }
 h2 {
+  margin-top: 10px;
   font-size: 20px;
   text-align: right;
 }
 form {
+  margin-top: 20px;
   font-size: 12px;
+}
+#search-text-input {
+  width: 91%;
 }
 .fas {
   color: rgb(69, 69, 73);
@@ -30,9 +35,6 @@ form {
 }
 ul {
   list-style: none;
-}
-h3 {
-  padding-inline-start: 20px;
 }
 .detail {
   font-size: 14px;
@@ -53,6 +55,15 @@ p::first-letter {
 }
 .forecast2 {
   font-size: 20px;
+  margin: 0px;
   padding-top: 40px;
-  margin: 5px 0;
+  padding-inline-start: 0px;
+}
+.images {
+  height: 50px;
+  margin-left: 0px;
+}
+footer {
+  padding-left: 90px;
+  font-family: monospace;
 }
