@@ -161,6 +161,9 @@ function retrievePosition(position) {
   let lon = position.coords.longitude;
   let url = `https://api.openweathermap.org/data/2.5/weather?q=&lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
   axios.get(url).then(showResult);
+
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=&lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function getCurrent() {
